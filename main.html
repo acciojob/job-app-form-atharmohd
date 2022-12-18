@@ -10,25 +10,24 @@
 	<!-- the entire body must be written by student -->
 	<form action="">
 		<h1>Job Application form</h1>
-		<li>first name: <input type="text" name="fname" placeholder="The first name" id="fname">
-		middle name: <input type="text" name="mname" placeholder="middle name" id="mname">
-		last name: <input type="text" name="lname" placeholder="last name" id="lname"></li>
+		<li>first name: <input type="text" name="name" placeholder="The first name" id="name">
+	
 		<br>
 		<li>email: <input type="text" name="email" id="email"></li>
-		<li>Gender:</li>
-		male: <input type="radio" name="gender">
-		female: <input type="radio" name="gender">
-		transgender: <input type="radio" name="gender">
+		
+		<label for="gender_m">M</label>
+  <input type="radio" id="gender_m" name="gender" required>
+  <label for="gender">F</label>
+  <input type="radio" id="gender_f" name="gender" required>
 		<br>
 		<li>date of birt:<input type="date" placeholder="dd/mm/yyyy"></li>
+		<br>
 		<li>Age:<input type="number"></li>
 		<br>
-		<li>laptop Brands:</li>
-		asus:<input type="radio" name="brand">
-		lenovo:<input type="radio" name="brand">
-		dell:<input type="radio" name="brand">
-		hp:<input type="radio" name="brand">
-		apple:<input type="radio" name="brand">
+		<select name="laptop" id="laptop" required>
+		<option value="">asus</option>
+		<option value="">lenovo</option>
+		<option value="">hp</option></select>
 		<br>
 		<li>password:<input type="password"></li> 
 		:<input type="submit">
